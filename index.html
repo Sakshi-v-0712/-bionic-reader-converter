@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bionic Reading</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gradient-to-r from-blue-200 to-purple-300 p-6 flex justify-center items-center min-h-screen relative">
+
+    <div id="mainContainer" class="container mx-auto p-8 bg-white shadow-2xl rounded-lg max-w-7xl relative z-10">
+        <h1 class="text-4xl font-extrabold mb-6 text-center text-gray-900">Bionic Reading Converter</h1>
+
+        <div id="mainContent" class="flex space-x-4">
+            <div class="w-1/2">
+                <h2 class="text-2xl font-semibold mb-2 text-gray-800">Original Text</h2>
+                <textarea id="inputText" class="w-full h-64 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter text here..."></textarea>
+            </div>
+            <div class="w-1/2">
+                <h2 class="text-2xl font-semibold mb-2 text-gray-800">Converted Text</h2>
+                <div id="outputText" class="w-full h-64 p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white shadow-lg text-lg overflow-y-auto"></div>
+            </div>
+        </div>
+
+        <div class="flex justify-center space-x-4 mt-4">
+            <button id="convertButton" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">Convert</button>
+            <button id="resetButton" class="bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">Reset</button>
+            <button id="enlargeButton" class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105">Enlarge Output</button>
+        </div>
+    </div>
+
+    <div id="enlargedOutput" class="hidden fixed inset-0 bg-white flex flex-col justify-center items-center p-8">
+        <h1 class="text-4xl font-extrabold mb-6 text-center text-gray-900">Bionic Reading Converter</h1>
+        <div id="outputTextLarge" class="w-full h-full p-4 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white shadow-lg text-lg overflow-y-auto"></div>
+        <button id="resetLargeButton" class="mt-4 bg-red-500 text-white px-6 py-3 rounded-full hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

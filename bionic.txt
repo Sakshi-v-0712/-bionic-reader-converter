@@ -1,0 +1,15 @@
+The reader’s brain contains a complicated set of mechanisms admirably attuned to reading.
+For a great many centuries, this talent remained a mystery.
+Today, the brain’s black box is cracked open and a true science of reading is coming into being.
+Advances in psychology and neuroscience over the last twenty years have begun to unravel the principles 
+underlying the brain’s reading circuits.
+Modern brain imaging methods now reveal, in just a matter of minutes, the brain areas
+that activate when we decipher written words. Scientists can track a printed word as it 
+progresses from the retina through a chain of processing stages, each of which is 
+marked by an Elementary Question: 
+
+        Are these letters? 
+        What do they look like? 
+        Are they a word?
+        What does it sound like?
+        How is it pronounced? What does it mean?
