@@ -21,6 +21,25 @@ document.getElementById('resetLargeButton').addEventListener('click', function()
     document.getElementById('enlargedOutput').classList.add('hidden');
 });
 
+document.getElementById('uploadButton').addEventListener('click', function() {
+    document.getElementById('fileInput').click();
+});
+
+document.getElementById('fileInput').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const fileContent = e.target.result;
+            document.getElementById('inputText').value = fileContent;
+            const outputText = bionicRead(fileContent);
+            document.getElementById('outputText').innerHTML = outputText;
+            document.getElementById('outputTextLarge').innerHTML = outputText;
+        };
+        reader.readAsText(file);
+    }
+});
+
 function bionicRead(text) {
     const lines = text.split('\n');
     return lines.map(line => {
